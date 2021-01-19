@@ -4,4 +4,4 @@ myMean <- function(assignment2)
 myMean(assignment2)
 myMean2 <- function(assignment2) #This one works beause it is correctly calling assignment2
 { return(sum(assignment2)/length(assignment2))}
-+myMean2(assignment2)
++myMean2(assignment2) #The answer is 19.25
