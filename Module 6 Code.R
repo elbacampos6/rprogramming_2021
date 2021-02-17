@@ -56,8 +56,8 @@ G
 Z <- diag(3,5,5) #create desired diagonals
 for (i in 2:ncol(Z)) #starting at column 2 to the end of columns in z do...
 {
-  Z[i,1] <- 2 #each column in the FIRST row is changed to 2
-  Z[1,i] <- 1 #each row in the FIRST COLUMN is changed to 1
+  Z[i,1] <- 2 #each row in the FIRST column is changed to 2
+  Z[1,i] <- 1 #each column in the FIRST row is changed to 1
 }
 Z
 
