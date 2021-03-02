@@ -27,6 +27,15 @@ i_students <- subset(dat, grepl("i", dat$Name, ignore.case=T))
 #Write CSV files
 write.table(i_students,"DataSubset",sep=",")
 
+write.csv(i_students, file.choose(new = FALSE)) #This only worked with my MAC, saves in my created CSV file
+
+write.csv(i_students, file=file.choose(new = TRUE),row.names=TRUE, sep=',', col.names=TRUE) #This only worked with my MAC
+
+write.csv(i_students, "/Users/AdrianaCampos/Box/PhD/Spring 2021/R Programming/Module 8/test.csv") #This worked with my MAC
+
+
+
+
 
 
 
