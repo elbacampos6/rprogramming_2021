@@ -1,0 +1,50 @@
+---
+title: "Module 12"
+author: "Adriana Campos"
+date: "3/29/2021"
+output: html_document
+---
+
+**First markdown document and assignment for Module 12.**
+
+First a little humor:
+
+
+![](https://ulyngs.github.io/rmarkdown-workshop-2019/slides/figures/googling.jpg)
+
+Let's load data
+
+```{r}
+library(datasets)
+data(airquality)
+summary(airquality)
+```
+
+Here's a pairs plot of the data
+
+```{r}
+pairs(airquality)
+```
+
+Regression model of ozone on some predictors
+
+```{r}
+fit <- lm(Ozone~Solar.R + Wind + Temp, data = airquality)
+summary(fit)
+```
+
+Create an unordered list
+
+*Here's item one
+
+*item 2
+
+Ordered list
+
+1. first item
+
+2. second item
+
+This Markdown was based off this video tutorial:
+
+https://youtu.be/DNS7i2m4sB0
